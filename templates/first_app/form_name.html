@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+    <link rel="stylesheet" href="{% static "/css/style.css" %}">
+  </head>
+  <body>
+    <h1>Fill the form</h1>
+
+    <div class="">
+      <form class="" action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+    </div>
+
+  </body>
+</html>
